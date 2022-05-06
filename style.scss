@@ -1,0 +1,100 @@
+$font-nunito: Nunito;
+$font-Montserrat: Montserrat;
+$header-width: 30%;
+$header-heigth: 700px;
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo{
+  position: relative;
+  min-height: $header-heigth;
+  min-width: $header-width;
+  
+  &-text{
+    position: relative;
+    width: 486px;
+    height: 100px;
+    left: 180px;
+    top: 200px;
+
+    &__item{
+      position: relative;
+      font-family: $font-Montserrat;
+      font-size: 54px;
+      font-weight: 900;
+      
+    }
+  
+    &__item:nth-child(2) {
+      left: -15px;
+      background-color: #C7A17A;
+      color: #FFFFFF;
+    }
+  }
+  &__img{
+    position: relative;
+    left: 187.29px;
+    top: 75.64px
+  }
+}
+
+.img{
+  min-height: $header-heigth;
+  min-width: 35%;
+  background: url(./IMG/preview.png);
+}
+
+.side-menu{
+  min-height: $header-heigth;
+  min-width: $header-width;
+  background-color: #415167;
+
+  &__orders-count{
+    position: relative;
+    left: 25%;
+    top: 20%;
+    background-color: #C7A17A;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  &__orders-button{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    background: url(./IMG/shopping-cart.png);
+    background-repeat:no-repeat;
+    height: 50px;
+    width: 50px;
+    border: 0;
+  }
+}
+
+.navigation {
+  position: relative;
+  left: 20%;
+  top: 20%;
+  font-family: $font-nunito;
+  font-size: 20px;
+  color: #EDF0F5;
+}
+.navigation_list {
+  
+  list-style: none;
+  font-weight: 300;
+  opacity: 0.5;
+}
