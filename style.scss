@@ -1,7 +1,8 @@
 $font-nunito: Nunito;
 $font-Montserrat: Montserrat;
 $header-width: 30%;
-$header-heigth: 700px;
+$header-heigth: 100vh;
+$text-center: center;
 
 * {
   box-sizing: border-box;
@@ -9,10 +10,27 @@ $header-heigth: 700px;
   padding: 0px;
 }
 
+a{
+  text-decoration: none;
+  color: #EDF0F5;
+}
+.container {
+  width: 100%;
+
+}
+.grid-container{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header"
+             "main"
+             "footer";
+}
+
 .header{
+  grid-area: header;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  
 }
 
 .logo{
@@ -50,7 +68,7 @@ $header-heigth: 700px;
 
 .img{
   min-height: $header-heigth;
-  min-width: 35%;
+  min-width: 30%;
   background: url(./IMG/preview.png);
 }
 
@@ -62,7 +80,7 @@ $header-heigth: 700px;
   &__orders-count{
     position: relative;
     left: 25%;
-    top: 20%;
+    top: 10%;
     background-color: #C7A17A;
     border-radius: 50%;
     width: 20px;
@@ -75,7 +93,7 @@ $header-heigth: 700px;
   &__orders-button{
     position: relative;
     left: 20%;
-    top: 20%;
+    top: 10%;
     background: url(./IMG/shopping-cart.png);
     background-repeat:no-repeat;
     height: 50px;
@@ -92,9 +110,130 @@ $header-heigth: 700px;
   font-size: 20px;
   color: #EDF0F5;
 }
+
 .navigation_list {
-  
   list-style: none;
   font-weight: 300;
   opacity: 0.5;
+  &__item{
+    padding: 100px;
+  }
+}
+
+.main{
+  grid-area: main;
+}
+
+.coffee-component{
+  margin: 100px;
+  &__text{
+    text-align: $text-center;
+    font-family: $font-nunito;
+    color: #415167;
+  }
+  &__title{
+    text-align: $text-center;
+    font-family: $font-Montserrat;
+    color: #415167;
+  }
+}
+
+.features-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
+  &__img{
+    width: 100px;
+    height: 100px;
+  }
+
+  &__title{
+    text-align: $text-center;
+    font-family: $font-nunito;
+    font-weight: 700;
+  }
+
+  &__description{
+    max-width: 200px;
+    font-family: $font-nunito;
+    font-weight: 300;
+  }
+}
+
+.coffee-menu{
+  min-height: 700px;
+  width: 100%;
+  background: linear-gradient(to right, #415167 30%,white 30%,white 100%);
+}
+
+.coffe-menu-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item{
+  transform: translate(10%);
+  display: flex;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  background-color: #EDF0F5;
+  margin: 20px;
+
+  &__img{
+    width: 200px;
+  }
+  
+
+  &__price{
+    color: #C7A17A;
+    font-family: $font-nunito;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &__title{
+    font-family: $font-nunito;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__description{
+    padding: 20px 0;
+    font-family: $font-nunito;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &__purchase-btn{
+    background-color: #C7A17A;
+    color: #F9FBFF;
+    border: 0px;
+    border-radius: 10px;
+    font-family: $font-nunito;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__info{
+    padding: 0 10px;
+    font-family: $font-nunito;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__wrapper{
+    justify-self: center;
+  }
+}
+
+.footer{
+  grid-area: footer;
 }
