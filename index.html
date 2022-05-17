@@ -19,23 +19,21 @@
             <p class="logo-text__item">PERSONALIZED </p>
             <p class="logo-text__item">COFFEE</p>
           </div>
-          
         </div>
     
         <div class="img"></div>
     
         <div class="side-menu">
-          <p class="side-menu__orders-count">2</p>
           <button class="side-menu__orders-button"></button>
           
           <nav class="navigation">
             <h2 class="navigation__title">TRANG CHỦ</h2>
-            <ul class="navigation_list">
+            <ul class="navigation-list">
               <li class="navigation-list__item"><a href="#coffee-component">COFFEE</a></li>
-              <li class="navigation-list__item">PHIN MẠ MÀU</li>
-              <li class="navigation-list__item">COMBO PHIN PHÊ</li>
-              <li class="navigation-list__item">GIFTSET</li>
-              <li class="navigation-list__item">LIÊN HỆ</li>
+              <li class="navigation-list__item"><a href="">PHIN MẠ MÀU</a></li>
+              <li class="navigation-list__item"><a href="">COMBO PHIN PHÊ</a></li>
+              <li class="navigation-list__item"><a href="">GIFTSET</a></li>
+              <li class="navigation-list__item"><a href="">LIÊN HỆ</a></li>
             </ul>
           </nav>
         </div>
@@ -85,17 +83,17 @@
 
         <!-- change class name -->
         <section class="coffee-menu" id="coffee-menu">
-          <p>Choose Your Favorite</p>
+          <p class="coffee-menu__paragraph">Choose Your Favorite</p>
 
-          <h2>CHUẨN GU ĐÚNG VỊ</h2>
+          <h2 class="coffee-menu__title">CHUẨN GU ĐÚNG VỊ</h2>
 
-          <button class="coffee-menu__btn">&rarr;</button>
+          <div class="coffee-menu-container">
+            <button class="coffee-menu-container__btn">&rarr;</button>
 
-          <div class="coffe-menu-container">
             <div class="menu-item">
-              <img class="menu-item__img" src="./IMG/coffee/coffe_1.png" alt="revo mornign picture">
+              <img class="menu-item__img--shadow" src="./IMG/coffee/coffe_1.png" alt="revo mornign picture">
               
-              <div class="menu-item__wrapper">
+              <div class="menu-item-info">
                 <p class="menu-item__price">99.000</p>
   
                 <h3 class="menu-item__title">REVO Morning</h3>
@@ -126,19 +124,7 @@
             </div>
 
             <div class="menu-item">
-              <img class="menu-item__img" src="./IMG/coffee/coffe_5.png" alt="revo mornign picture">
-              
-              <div class="menu-item__wrapper">
-                <p class="menu-item__price">99.000</p>
-  
-                <h3 class="menu-item__title">REVO Morning</h3>
-    
-                <p class="menu-item__description"></p>
-    
-                <button class="menu-item__purchase-btn">MUA NGAY</button>
-
-                <span class="menu-item__info">CHI TIẾT</span>
-              </div>
+              <img class="menu-item__img--opasity" src="./IMG/coffee/coffe_5.png" alt="revo mornign picture">
             </div>
 
             <div class="menu-item">
@@ -175,26 +161,147 @@
             </div>
 
             <div class="menu-item">
-              <img class="menu-item__img" src="./IMG/coffee/coffe_6.png" alt="revo mornign picture">
-              
-              <div class="menu-item__wrapper">
-                <p class="menu-item__price">99.000</p>
-  
-                <h3 class="menu-item__title">REVO Morning</h3>
-    
-                <p class="menu-item__description"></p>
-    
-                <button class="menu-item__purchase-btn">MUA NGAY</button>
+              <img class="menu-item__img--opasity" src="./IMG/coffee/coffe_6.png" alt="revo mornign picture">
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <span class="menu-item__info">CHI TIẾT</span>
+        
+        <section class="gift">
+          <p class="gift__paragraph">Best Gift For Best Friend</p>
+
+          <h2 class="gift__title">GIFTSET</h2>
+
+          <div class="giftset">
+            <img src="./IMG/gifset/gifset-img.png" alt="gifset picture" class="gifset__img">
+
+            <div class="giftset-item">
+              <p class="giftset-item__price">285.000</p>
+
+              <h3 class="giftset-item__title">Giftset "Cà phê phin Việt Nam"</h3>
+    
+              <p class="giftset-item__description">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+    
+              <div class="gifset-info">
+                <div class="gifset-info__item">
+                  <img src="./IMG/gifset/IC_coffee.png" alt="coffee beans picture">
+
+                  <div class="gifset-text">
+                  <h3>Loại hạt</h3>
+
+                  <p>Fine Robusta Blend</p>
+                  </div>
+                </div>
+
+                <div class="gifset-info__item">
+                  <img class="" src="./IMG/gifset/IC_Mountain.png" alt="mountains picture">
+
+                  <div class="gifset-text">
+                    <h3>Độ cao</h3>
+                    <p>700 - 800m</p>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <button class="giftset-item__purchase-btn">MUA NGAY</button>
+
+              <span class="giftset-item__info">CHI TIẾT</span>
+            </div>
+
+            <div class="giftset-choice">
+              <button class="giftset-choice__btn">1</button>
+              <button class="giftset-choice__btn--opacity">2</button>
+              <button class="giftset-choice__btn--opacity">3</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="combo">
+          <p class="combo__paragraph">Your Personalized Coffee</p>
+          <h3 class="combo__title">COMBO PHIN PHÊ</h3>
+
+          
+
+          <div class="combo-choice">
+            <button class="combo-choice__btn">&rarr;</button>
+            <div class="combo-item">
+              <img src="./IMG/combo/combo1.png" alt="first combo" class="combo-item__img">
+
+              <div class="combo-info">
+                <span class="combo-info__new-price">147.000</span>
+                <span class="combo-info__old-price">155.000</span>
+  
+                <h3 class="combo-info__title">REVO Morning</h3>
+        
+                <p class="combo-info__description">đậm đà, đắng, truyền thống</p>
+        
+                <button class="combo-info__purchase-btn">MUA NGAY</button>
+    
+                <span class="combo-info__info">CHI TIẾT</span>
+              </div>
+            </div>
+            
+            <div class="combo-item">
+              <img src="./IMG/combo/combo2.png" alt="first combo" class="combo-item__img">
+
+              
+              <div class="combo-info">
+                <span class="combo-info__new-price">147.000</span>
+                <span class="combo-info__old-price">155.000</span>
+  
+                <h3 class="combo-info__title">REVO Morning</h3>
+        
+                <p class="combo-info__description">đậm đà, đắng, truyền thống</p>
+        
+                <button class="combo-info__purchase-btn">MUA NGAY</button>
+    
+                <span class="combo-info__info">CHI TIẾT</span>
+              </div>
+            </div>
+
+            <div class="combo-item">
+              <img src="./IMG/combo/combo3.png" alt="first combo" class="combo-item__img">
+
+              <div class="combo-info">
+                <span class="combo-info__new-price">147.000</span>
+                <span class="combo-info__old-price">155.000</span>
+  
+                <h3 class="combo-info__title">REVO Morning</h3>
+        
+                <p class="combo-info__description">đậm đà, đắng, truyền thống</p>
+        
+                <button class="combo-info__purchase-btn">MUA NGAY</button>
+    
+                <span class="combo-info__info">CHI TIẾT</span>
+              </div>
+            </div>
+
+            <div class="combo-item--opacity">
+              <img src="./IMG/combo/combo4.png" alt="first combo" class="combo-item__img">
+
+              <div class="combo-info">
+                <span class="combo-info__new-price">147.000</span>
+                <span class="combo-info__old-price">155.000</span>
+  
+                <h3 class="combo-info__title">REVO Morning</h3>
+        
+                <p class="combo-info__description">đậm đà, đắng, truyền thống</p>
+        
+                <button class="combo-info__purchase-btn">MUA NGAY</button>
+    
+                <span class="combo-info__info">CHI TIẾT</span>
               </div>
             </div>
           </div>
         </section>
       </main>
+      
+
     
       <footer class="footer">
-    
+        <p class="footer__text">© Revo Coffee Việt Nam - 2018</p>
       </footer>
     </div>
   </div>
