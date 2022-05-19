@@ -1,7 +1,7 @@
 $font-nunito: Nunito;
 $font-Montserrat: Montserrat;
 $header-width: 30%;
-$header-heigth: 100vh;
+$header-heigth: 70vh;
 $text-center: center;
 
 * {
@@ -19,13 +19,13 @@ a{
   overflow: hidden;
 
 }
-// .grid-container{
-//   display: grid;
-//   grid-template-rows: auto auto auto;
-//   grid-template-areas: "header"
-//              "main"
-//              "footer";
-// }
+ .grid-container{
+   display: grid;
+   grid-template-rows: auto;
+   grid-template-areas: "header"
+              "main"
+            "footer";
+ }
 
 .header{
   grid-area: header;
@@ -43,8 +43,8 @@ a{
     position: relative;
     width: 486px;
     height: 100px;
-    left: 180px;
-    top: 200px;
+    left: 40%;
+    top: 30%;
 
     &__item{
       position: relative;
@@ -71,7 +71,7 @@ a{
 .img{
   min-height: $header-heigth;
   min-width: 40%;
-  background: url(./IMG/preview.png);
+  background: url(./IMG/preview.png) no-repeat;
 }
 
 .side-menu{
@@ -228,13 +228,15 @@ a{
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
 
   &__btn {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 0%;
+    transform: translate(-50%,0);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -287,10 +289,8 @@ a{
 }
 
 .menu-item{
-  position: relative;
-  left: 25%;
   display: flex;
-  width: 450px;
+  width: 500px;
   height: 250px;
   overflow: hidden;
   background-color: #EDF0F5;
@@ -298,65 +298,31 @@ a{
 
   &__img{
     width: 200px;
-    &--opasity{
+    &--opacity{
       opacity: 0.5;
     }
     &--shadow{
       box-shadow: -10px -9px 45px -5px rgba(255, 255, 255, 0.6);
     }
   }
-  
 
-  &__price{
-    color: #C7A17A;
-    font-family: $font-nunito;
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  &__title{
-    font-family: $font-nunito;
-    font-weight: 700;
-    font-size: 24px;
-  }
-
-  &__description{
-    padding: 20px 0;
-    font-family: $font-nunito;
-    font-weight: 300;
-    font-size: 16px;
-  }
-
-  &__purchase-btn{
-    background-color: #C7A17A;
-    color: #F9FBFF;
-    border: 0px;
-    border-radius: 50px;
-    font-family: $font-nunito;
-    font-weight: 700;
-    font-size: 16px;
-    width: 101px;
-    height: 30px;
-  }
-
-  &__info{
-    padding: 0 10px;
-    font-family: $font-nunito;
-    font-weight: 500;
-    font-size: 16px;
-  }
-
-  &__wrapper{
-    justify-self: center;
+  &--opacity{
+    position: relative;
+    justify-self: flex-end;
+    display: flex;
+    height: 250px;
+    overflow: hidden;
+    background-color: #EDF0F5;
   }
 
 }
 
 .gift{
-  margin: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 
   &__paragraph{
     font-family: $font-nunito;
@@ -373,6 +339,7 @@ a{
 }
 .giftset{
   display: flex;
+  justify-content: center;
   margin: 50px 0;
   width: 80%;
 }
@@ -410,19 +377,40 @@ a{
     font-size: 16px;
     width: 101px;
     height: 30px;
-    margin-right: 20px;
+    margin-right: 150px;
   }
 }
 
 .gifset-info{
   display: flex;
+  margin: 50px 0;
+}
 
-  &__item{
-    display: flex;
-    width: 50%;
+.gifset-text {
+  &__paragraph {
+    color: #415167;
+    font-family: $font-Montserrat;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  &__title {
+    color: #415167;
+    font-family: $font-nunito;
+    font-weight: 300;
+    font-size: 20px;
   }
 }
 
+.gifset-description{
+  display: flex;
+  width: 50%;
+
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+}
 .giftset-choice{
   display: flex;
   flex-direction: column;
@@ -472,13 +460,18 @@ a{
 
 .combo-choice {
   position: relative;
+  right: 0%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
+ 
 
   &__btn {
     position: absolute;
-    top: 50%;
-    right: 0%;
+    transform: translate(-50% 0);
+    top: 45%;
+    right: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -492,19 +485,19 @@ a{
 
 .combo-item {
   position: relative;
-  right: -150px;
+  right: -70px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
-  max-width: 360px;
+  max-width: 400px;
   max-height: 562px;
   margin: 20px;
 
   &--opacity {
     position: relative;
-    right: -150px;
+    right: -70px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -580,3 +573,50 @@ a{
     color: #415167;
   }
 }
+
+@media screen and (max-width: 1100px){
+  div[class$="--opacity"]{
+    display: none;
+  }
+
+  [class$='__btn'] {
+    top:50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  div[class$="--opacity"]{
+    display: none;
+  }
+
+  .combo-choice {
+    justify-content: space-evenly;
+  }
+
+  .coffee-menu-container {
+    justify-content: space-evenly;
+  }
+
+  .img {
+    min-width: 25%;
+    min-height: 700px;
+    height: 700px;
+  }
+
+  .header {
+    min-height: 700px;
+    height: 700px;
+  }
+  .logo {
+    min-height: 700px;
+    height: 700px;
+  }
+
+  .side-menu {
+    min-height: 700px;
+    height: 700px;
+  }
+}
+
+
+
