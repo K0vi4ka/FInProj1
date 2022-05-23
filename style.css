@@ -42,7 +42,7 @@ a {
   top: 30%;
 }
 .logo-text__item {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 54px;
   font-weight: 900;
 }
@@ -151,7 +151,7 @@ a {
 }
 .coffee-component__title {
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   color: #415167;
 }
 
@@ -200,7 +200,7 @@ a {
   color: #415167;
 }
 .coffee-menu__title {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
   color: #415167;
@@ -303,7 +303,7 @@ a {
   color: #415167;
 }
 .gift__title {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
   color: #415167;
@@ -359,7 +359,7 @@ a {
 
 .giftset-text__paragraph {
   color: #415167;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 20px;
 }
@@ -389,7 +389,7 @@ a {
   border: 0;
   width: 88px;
   height: 154px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
   color: #415167;
@@ -398,7 +398,7 @@ a {
   border: 0;
   width: 88px;
   height: 154px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
   color: #415167;
@@ -428,7 +428,7 @@ a {
 }
 .combo__title {
   color: #415167;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
   z-index: 1;

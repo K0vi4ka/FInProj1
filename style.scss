@@ -1,5 +1,5 @@
 $font-nunito: Nunito;
-$font-Montserrat: Montserrat;
+$font-Montserrat: 'Montserrat', sans-serif;
 $header-width: 30%;
 $header-heigth: 700px;
 $text-center: center;
@@ -50,7 +50,7 @@ a {
     top: 30%;
 
     &__item{
-      font-family: $font-Montserrat;
+      font-family: 'Montserrat', sans-serif;
       font-size: 54px;
       font-weight: 900;
       
